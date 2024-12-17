@@ -17,12 +17,12 @@ loadingManager.onError = () => console.error("Error loading resource");
 const textureLoader = new THREE.TextureLoader(loadingManager);
 const cuberTextureLoader = new THREE.CubeTextureLoader();
 
-const crateTexture = textureLoader.load("./textures/Crate.webp");
-const matcapTexture = textureLoader.load("./textures/matcaps/3.png");
-const doorColorTexture = textureLoader.load("./textures/door/color.jpg");
-const doorHeightTexture = textureLoader.load("./textures/door/height.jpg");
-const doorNormalTexture = textureLoader.load("./textures/door/normal.jpg");
-const doorAlphaTexture = textureLoader.load("./textures/door/alpha.jpg");
+const crateTexture = textureLoader.load("/textures/Crate.webp");
+const matcapTexture = textureLoader.load("/textures/matcaps/3.png");
+const doorColorTexture = textureLoader.load("/textures/door/color.jpg");
+const doorHeightTexture = textureLoader.load("/textures/door/height.jpg");
+const doorNormalTexture = textureLoader.load("/textures/door/normal.jpg");
+const doorAlphaTexture = textureLoader.load("/textures/door/alpha.jpg");
 const doorMetalnessTexture = textureLoader.load(
   "./textures/door/metalness.jpg"
 );
@@ -44,12 +44,12 @@ const doorAmbientOcclusionTexture = textureLoader.load(
 // doorColorTexture.generateMipmaps = false;
 
 const envirnomentMapTextures = cuberTextureLoader.load([
-  "./textures/environmentMaps/0/px.jpg",
-  "./textures/environmentMaps/0/nx.jpg",
-  "./textures/environmentMaps/0/py.jpg",
-  "./textures/environmentMaps/0/ny.jpg",
-  "./textures/environmentMaps/0/pz.jpg",
-  "./textures/environmentMaps/0/nz.jpg",
+  "/textures/environmentMaps/0/px.jpg",
+  "/textures/environmentMaps/0/nx.jpg",
+  "/textures/environmentMaps/0/py.jpg",
+  "/textures/environmentMaps/0/ny.jpg",
+  "/textures/environmentMaps/0/pz.jpg",
+  "/textures/environmentMaps/0/nz.jpg",
 ]);
 
 // Canvas
