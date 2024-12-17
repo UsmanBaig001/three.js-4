@@ -1,7 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as dat from "dat.gui";
-import gsap from "gsap";
 
 // Debug GUI
 const gui = new dat.GUI();
